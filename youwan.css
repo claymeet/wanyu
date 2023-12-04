@@ -1,0 +1,440 @@
+﻿
+<style>
+	* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+  html{
+  	width:100%;
+  	height:100%;
+  }
+body {
+	width:100%;
+  	height:100%;
+    background-color:white ;
+}
+
+
+#title {
+    width: 100%;
+    height: 8%;
+    background-color: white;
+	margin: 0 auto;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 10%;
+    line-height: 60px;
+    text-align: center;
+}
+
+nav a {
+	width: 100%;
+    text-decoration: none;
+    font-size: 35px;
+    color: #090000;
+    font-weight: 600;
+    margin-left: 80px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0);
+}
+
+nav img {
+    position: absolute;
+    left: 0px;
+    height: 60px;
+    top:3px;
+   
+}
+
+nav a:hover {
+    color: #5DB4DD;
+    border-bottom: 1px solid #5DB4DD;
+
+}
+
+/* 轮播图样式 */
+.contentl {
+    width: 1000px;
+    height: 433px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 400%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: none;
+}
+
+.wrapper li {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper li img {
+    width: 100%;
+    height:100%;
+}
+
+.radius {
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radius li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.6;
+    margin: 0 3px;
+    padding: 0;
+    list-style: none;
+}
+
+.radius-active {
+    opacity: 1 !important;
+    border: 2px solid rgb(255, 255, 255, 0.5);
+    background-clip: padding-box;
+}
+
+.prev {
+    width: 23px;
+    line-height: 34px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -17px;
+    background-color: darkgray;
+    opacity: 0;
+}
+
+.next {
+    width: 23px;
+    line-height: 34px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -17px;
+    background-color: darkgray;
+    opacity: 0;
+}
+
+.prev span,
+.next span {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+/* 中间内容区域 */
+#main {
+    width:100%;
+    margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h1 {
+    color: #A84344;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#jiehsao {
+    margin-top: 30px;
+}
+
+#jiehsao img {
+    width: 300px;
+   float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#jiehsao p {
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(103, 103, 103);
+    text-indent: 32px;
+}
+
+#jiehsao p span {
+    color: #333;
+    font-size: 28px;
+    font-weight: 550;
+}
+
+#fenlei {
+    width: 100%;
+    height: 100%;
+    font-size: 0px;
+    margin-top: 30px;
+ 
+}
+
+#fenlei>div {
+    margin-left: 30px;
+    box-sizing: border-box;     
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#fenlei>div:first-child {
+    margin-left: 0px;
+}
+
+#fenleiimg {
+    width: 500px;
+    height: 550px;
+    overflow: hidden;
+}
+
+#fenlei_title {
+    width:500px;
+    height: 700px;
+    background-color: #f9f2fc;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#fenlei_title h1 {
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#fenlei_title p {
+    box-sizing: border-box;
+    padding: 0px 20px;
+    font-size: 14px;
+}
+
+footer {
+    line-height: 60px;
+    background-color: white;
+    color:#A84344;
+    text-align: center;
+	width: 1300px;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+/* 第二页 */
+#main_banner {
+    width: 100%;
+    font-size: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#main_banner img {
+    width: 85%;
+     
+    
+}
+
+.h1 {
+    margin-top: 20px;
+}
+
+#dierye {
+    width: 100%;
+    padding-top: 30px;
+}
+
+#dierye li {
+    width: 100%;
+    margin-bottom: 0px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#dierye li div {
+    display: inline-block;
+    height: 300px;
+
+}
+
+#foodimg {
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+#foodimg img {
+    width: 100%;
+    height: 300px;
+}
+
+#jieshao {
+    width: 100%;
+    height: 300px;
+}
+
+#jieshao p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+
+#jieshao p:last-child {
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+
+/* 第三页 */
+#fengjing {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0px;
+    margin-top: 20px;
+}
+
+#fengjing li {
+    display: inline-block;
+width: 320px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    
+}
+
+#fengjing li p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#fengjing li p:nth-child(2) {
+    font-weight: 600;
+}
+
+#fengjing li p:nth-child(3) {
+    box-sizing: border-box;
+    width: 280px;
+    height: 135px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(101, 101, 101);
+}
+
+#fengjing li img {
+    display: inline-block;
+    width: 90%;
+    height: 175px;
+    background-color: #333;
+    margin-bottom: 10px;
+}
+
+/* 第四页 */
+#renwen {
+    text-align: center;
+}
+
+#renwen img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#renwen p {
+    text-align: left;
+    line-height: 40px;
+    text-indent: 42px;
+}
+
+#liuyan {
+    text-align: center;
+}
+
+#liuyanbox {
+    display: inline-block;
+    text-align: left;
+}
+
+#liuyanbox {
+    line-height: 30px;
+}
+
+#liuyanbox input {
+    width: 240px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 500px;
+    height: 230px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.dropbtn {
+color: white;
+font-size: 14px;
+color: #090000;
+
+	
+}
+.dropdown {
+position: relative;
+display: inline-block;
+	
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: lightgrey;
+width: 93px;
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+text-decoration: none;
+display: block;
+	margin: 0px;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container video {
+  margin: auto;
+}
+</style>
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
